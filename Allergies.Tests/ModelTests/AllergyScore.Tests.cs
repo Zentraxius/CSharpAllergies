@@ -9,8 +9,9 @@ namespace AllergyScore.Tests
     [TestMethod]
     public void ConvertToBinary_ConvertingInputToBinary_ListOfOnesAndZeros()
     {
-      Score.ConvertToBinary(13);
-      Assert.AreEqual();
+      List<int> binaryList = Score.ConvertToBinary(13);
+      List<int> testList = {1, 0, 0};
+      Assert.AreEqual(testList, binaryList);
     }
   }
 }
